@@ -8,7 +8,6 @@ function updateDateTime() {
     timeContainer.textContent = 'Time: ' + time;
 }
 
-// Call the function initially to display the date and time immediately
 updateDateTime();
 
 // Update the date and time every second
