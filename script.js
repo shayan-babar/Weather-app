@@ -7,8 +7,6 @@ function updateDateTime() {
     dateContainer.textContent = 'Date: ' + date;
     timeContainer.textContent = 'Time: ' + time;
 }
-
 updateDateTime();
-
 // Update the date and time every second
 setInterval(updateDateTime, 1000);
