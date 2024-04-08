@@ -293,47 +293,10 @@ footer {
 
 footer a {
   text-decoration: none;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
   font-size: large;
-}
-
-footer h3 {
-  margin: 0;
-  text-decoration: none;
-  /* Remove default underline */
   color: #ffffff;
-  /* Default text color */
-  transition: color 0.3s ease;
-  /* Transition effect for color change */
-  position: relative;
 }
 
-/* Define the style for the underline */
-footer h3::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  /* Adjust the position of the underline */
-  width: 0;
-  /* Start with no underline */
-  height: 2px;
-  /* Thickness of the underline */
-  background-color: #ffebeb;
-  /* Default underline color */
-  transition: width 0.3s ease;
-  /* Transition effect for width change */
-}
-
-/* Change text color and underline width when hovered */
-footer h3:hover {
-  color: #ffffff;
-  /* New text color on hover */
-}
-
-footer h3:hover::after {
-
-  width: 100%;
-  /* Expand the width of the underline on hover */
+.footer-content a:hover {
+  text-decoration: underline #ffffff;
 }
