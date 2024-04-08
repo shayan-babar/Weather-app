@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="shortcut icon" type="x-icon"
         href="https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/512/42666-sun-behind-large-cloud-icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Weather app by Shayan</title>
     <link rel="stylesheet" href="style.css">
-    <title>Weather App by Shayan</title>
 </head>
 
 <body>
@@ -20,6 +21,59 @@
             <div id="time"></div>
         </div>
     </header>
+    <div class="container">
+        <div class="search-box">
+            <i class="bx bxs-map"></i>
+            <input type="text" placeholder="enter city name" />
+            <button class="bx bx-search"></button>
+        </div>
+        <p class="city-hide">city hide</p>
+
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="images/cloud.png" alt="" />
+                        <p class="temperature">16<span>°C</span></p>
+                        <p class="decription">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="bx bx-water"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="bx bx-wind"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="not-found">
+            <div class="box">
+                <img src="images/404.png" />
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="https://github.com/shayan-babar">
+                <h3>&copy;Developed and Designed by Me</h3>
+            </a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
